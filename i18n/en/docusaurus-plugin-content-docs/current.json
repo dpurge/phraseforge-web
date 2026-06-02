@@ -1,0 +1,162 @@
+{
+  "version.label": {
+    "message": "Next",
+    "description": "The label for version current"
+  },
+  "sidebar.lessonsSidebar.category.Hiszpański": {
+    "message": "Spanish",
+    "description": "The label for category 'Hiszpański' in sidebar 'lessonsSidebar'"
+  },
+  "sidebar.lessonsSidebar.category.Hiszpański.link.generated-index.title": {
+    "message": "Spanish Lessons",
+    "description": "The generated-index page title for category 'Hiszpański' in sidebar 'lessonsSidebar'"
+  },
+  "sidebar.lessonsSidebar.category.Hiszpański.link.generated-index.description": {
+    "message": "Available Spanish CEFR levels in PhraseForge.",
+    "description": "The generated-index page description for category 'Hiszpański' in sidebar 'lessonsSidebar'"
+  },
+  "sidebar.lessonsSidebar.category.spa-b1": {
+    "message": "B1",
+    "description": "The label for category 'B1' in sidebar 'lessonsSidebar'"
+  },
+  "sidebar.lessonsSidebar.category.spa-b1.link.generated-index.title": {
+    "message": "Spanish B1 Lessons",
+    "description": "The generated-index page title for category 'B1' in sidebar 'lessonsSidebar'"
+  },
+  "sidebar.lessonsSidebar.category.spa-b1.link.generated-index.description": {
+    "message": "Intermediate Spanish lessons focused on everyday communication.",
+    "description": "The generated-index page description for category 'B1' in sidebar 'lessonsSidebar'"
+  },
+  "sidebar.lessonsSidebar.category.spa-b2": {
+    "message": "B2",
+    "description": "The label for category 'B2' in sidebar 'lessonsSidebar'"
+  },
+  "sidebar.lessonsSidebar.category.spa-b2.link.generated-index.title": {
+    "message": "Spanish B2 Lessons",
+    "description": "The generated-index page title for category 'B2' in sidebar 'lessonsSidebar'"
+  },
+  "sidebar.lessonsSidebar.category.spa-b2.link.generated-index.description": {
+    "message": "Upper-intermediate Spanish lessons for explaining tradeoffs and nuance.",
+    "description": "The generated-index page description for category 'B2' in sidebar 'lessonsSidebar'"
+  },
+  "sidebar.lessonsSidebar.category.Niemiecki": {
+    "message": "German",
+    "description": "The label for category 'Niemiecki' in sidebar 'lessonsSidebar'"
+  },
+  "sidebar.lessonsSidebar.category.Niemiecki.link.generated-index.title": {
+    "message": "German Lessons",
+    "description": "The generated-index page title for category 'Niemiecki' in sidebar 'lessonsSidebar'"
+  },
+  "sidebar.lessonsSidebar.category.Niemiecki.link.generated-index.description": {
+    "message": "Available German CEFR levels in PhraseForge.",
+    "description": "The generated-index page description for category 'Niemiecki' in sidebar 'lessonsSidebar'"
+  },
+  "sidebar.lessonsSidebar.category.deu-b1": {
+    "message": "B1",
+    "description": "The label for category 'B1' in sidebar 'lessonsSidebar'"
+  },
+  "sidebar.lessonsSidebar.category.deu-b1.link.generated-index.title": {
+    "message": "German B1 Lessons",
+    "description": "The generated-index page title for category 'B1' in sidebar 'lessonsSidebar'"
+  },
+  "sidebar.lessonsSidebar.category.deu-b1.link.generated-index.description": {
+    "message": "Intermediate German lessons for common plans and routines.",
+    "description": "The generated-index page description for category 'B1' in sidebar 'lessonsSidebar'"
+  },
+  "sidebar.lessonsSidebar.category.deu-b2": {
+    "message": "B2",
+    "description": "The label for category 'B2' in sidebar 'lessonsSidebar'"
+  },
+  "sidebar.lessonsSidebar.category.deu-b2.link.generated-index.title": {
+    "message": "German B2 Lessons",
+    "description": "The generated-index page title for category 'B2' in sidebar 'lessonsSidebar'"
+  },
+  "sidebar.lessonsSidebar.category.deu-b2.link.generated-index.description": {
+    "message": "Upper-intermediate German lessons for structured arguments.",
+    "description": "The generated-index page description for category 'B2' in sidebar 'lessonsSidebar'"
+  },
+  "sidebar.lessonsSidebar.category.Arabski": {
+    "message": "Arabic",
+    "description": "The label for category 'Arabski' in sidebar 'lessonsSidebar'"
+  },
+  "sidebar.lessonsSidebar.doc.Arabski": {
+    "message": "Arabic",
+    "description": "The label for the doc item 'Arabski' in sidebar 'lessonsSidebar', linking to the doc arb/index"
+  },
+  "sidebar.lessonsSidebar.category.arb-a1": {
+    "message": "A1",
+    "description": "The label for category 'A1' in sidebar 'lessonsSidebar'"
+  },
+  "sidebar.lessonsSidebar.category.arb-a1.link.generated-index.title": {
+    "message": "Arabic A1 Lessons",
+    "description": "The generated-index page title for category 'A1' in sidebar 'lessonsSidebar'"
+  },
+  "sidebar.lessonsSidebar.category.arb-a1.link.generated-index.description": {
+    "message": "Arabic lessons for learners starting from the basics.",
+    "description": "The generated-index page description for category 'A1' in sidebar 'lessonsSidebar'"
+  },
+  "sidebar.lessonsSidebar.category.arb-a2": {
+    "message": "A2",
+    "description": "The label for category 'A2' in sidebar 'lessonsSidebar'"
+  },
+  "sidebar.lessonsSidebar.category.arb-a2.link.generated-index.title": {
+    "message": "Arabic A2 Lessons",
+    "description": "The generated-index page title for category 'A2' in sidebar 'lessonsSidebar'"
+  },
+  "sidebar.lessonsSidebar.category.arb-a2.link.generated-index.description": {
+    "message": "Arabic lessons for simple everyday situations.",
+    "description": "The generated-index page description for category 'A2' in sidebar 'lessonsSidebar'"
+  },
+  "sidebar.lessonsSidebar.category.arb-b1": {
+    "message": "B1",
+    "description": "The label for category 'B1' in sidebar 'lessonsSidebar'"
+  },
+  "sidebar.lessonsSidebar.category.arb-b1.link.generated-index.title": {
+    "message": "Arabic B1 Lessons",
+    "description": "The generated-index page title for category 'B1' in sidebar 'lessonsSidebar'"
+  },
+  "sidebar.lessonsSidebar.category.arb-b1.link.generated-index.description": {
+    "message": "Arabic lessons for independent communication.",
+    "description": "The generated-index page description for category 'B1' in sidebar 'lessonsSidebar'"
+  },
+  "sidebar.lessonsSidebar.category.arb-b2": {
+    "message": "B2",
+    "description": "The label for category 'B2' in sidebar 'lessonsSidebar'"
+  },
+  "sidebar.lessonsSidebar.category.arb-b2.link.generated-index.title": {
+    "message": "Arabic B2 Lessons",
+    "description": "The generated-index page title for category 'B2' in sidebar 'lessonsSidebar'"
+  },
+  "sidebar.lessonsSidebar.category.arb-b2.link.generated-index.description": {
+    "message": "Arabic lessons for explaining opinions and arguments.",
+    "description": "The generated-index page description for category 'B2' in sidebar 'lessonsSidebar'"
+  },
+  "sidebar.lessonsSidebar.category.arb-c1": {
+    "message": "C1",
+    "description": "The label for category 'C1' in sidebar 'lessonsSidebar'"
+  },
+  "sidebar.lessonsSidebar.category.arb-c1.link.generated-index.title": {
+    "message": "Arabic C1 Lessons",
+    "description": "The generated-index page title for category 'C1' in sidebar 'lessonsSidebar'"
+  },
+  "sidebar.lessonsSidebar.category.arb-c1.link.generated-index.description": {
+    "message": "Arabic lessons for fluent and precise communication.",
+    "description": "The generated-index page description for category 'C1' in sidebar 'lessonsSidebar'"
+  },
+  "sidebar.lessonsSidebar.category.arb-c2": {
+    "message": "C2",
+    "description": "The label for category 'C2' in sidebar 'lessonsSidebar'"
+  },
+  "sidebar.lessonsSidebar.category.arb-c2.link.generated-index.title": {
+    "message": "Arabic C2 Lessons",
+    "description": "The generated-index page title for category 'C2' in sidebar 'lessonsSidebar'"
+  },
+  "sidebar.lessonsSidebar.category.arb-c2.link.generated-index.description": {
+    "message": "Arabic lessons for advanced register and style work.",
+    "description": "The generated-index page description for category 'C2' in sidebar 'lessonsSidebar'"
+  },
+  "sidebar.lessonsSidebar.doc.PhraseForge": {
+    "message": "PhraseForge",
+    "description": "The label for the doc item 'PhraseForge' in sidebar 'lessonsSidebar', linking to the doc index"
+  }
+}

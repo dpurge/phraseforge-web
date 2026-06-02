@@ -1,0 +1,18 @@
+{
+  "title": {
+    "message": "PhraseForge",
+    "description": "The title in the navbar"
+  },
+  "logo.alt": {
+    "message": "PhraseForge logo",
+    "description": "The alt text of navbar logo"
+  },
+  "item.label.Lekcje": {
+    "message": "Lessons",
+    "description": "Navbar item with label Lekcje"
+  },
+  "item.label.Blog": {
+    "message": "Blog",
+    "description": "Navbar item with label Blog"
+  }
+}

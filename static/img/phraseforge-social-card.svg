@@ -1,0 +1,10 @@
+<svg width="1200" height="630" viewBox="0 0 1200 630" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="630" fill="#F7FBF9"/>
+  <rect x="80" y="76" width="1040" height="478" rx="24" fill="#FFFFFF" stroke="#DFE7E3" stroke-width="4"/>
+  <rect x="134" y="136" width="110" height="110" rx="22" fill="#24786D"/>
+  <path d="M158 172C158 162.611 165.611 155 175 155H214C223.389 155 231 162.611 231 172V199C231 208.389 223.389 216 214 216H194L172 236V216C164.195 214.758 158 207.411 158 199V172Z" fill="#F7FBF9"/>
+  <path d="M175 180H211" stroke="#24786D" stroke-width="7" stroke-linecap="round"/>
+  <path d="M175 194H203" stroke="#C47F2F" stroke-width="7" stroke-linecap="round"/>
+  <text x="134" y="340" fill="#13201C" font-family="Arial, Helvetica, sans-serif" font-size="86" font-weight="700">PhraseForge</text>
+  <text x="138" y="420" fill="#40524C" font-family="Arial, Helvetica, sans-serif" font-size="38">Language lessons built around reusable phrases and steady review.</text>
+</svg>

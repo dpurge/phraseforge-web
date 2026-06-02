@@ -1,0 +1,24 @@
+.features {
+  display: flex;
+  align-items: center;
+  padding: 3rem 0;
+  width: 100%;
+}
+
+.feature {
+  margin-bottom: 1.5rem;
+}
+
+.featureMarker {
+  align-items: center;
+  background: #fff4df;
+  border: 1px solid #e2bd72;
+  border-radius: 8px;
+  color: #6f3c08;
+  display: inline-flex;
+  font-weight: 700;
+  height: 4rem;
+  justify-content: center;
+  margin-bottom: 1rem;
+  width: 4rem;
+}

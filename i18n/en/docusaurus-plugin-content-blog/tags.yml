@@ -1,0 +1,9 @@
+lessons:
+  label: Lessons
+  permalink: /lessons
+  description: Lesson design and site updates.
+
+planning:
+  label: Planning
+  permalink: /planning
+  description: Notes about the PhraseForge lesson library.
