@@ -5,21 +5,126 @@ slug: /
 
 # PhraseForge
 
-Wybierz język, aby przejrzeć dostępne poziomy CEFR i lekcje.
+PhraseForge pomaga w nauce języków obcych przez dostarczanie materiałów do czytania i rozszerzania słownictwa w językach obcych.
+
+Od dawna myślałem o tym, że w internecie nie ma odpowiedniej ilości interesujących tekstów które mogła by zrozumieć osoba ucząca się języka.
+Czytanki w podręcznikach są nudne, a książki i teksty w internecie są zbyt trudne.
+
+Aby poznać język, trzeba przez swój mózg przepuścić dużą ilość tego języka, a przetwarzana treść musi być na tyle interesująca, aby nasz mózg uznał ją za wartą włożonego wysiłku.
+
+Takich tekstów nie było, ale nadeszła era sztucznej inteligencji, możemy jej zlecić przygotowanie materiałów do nauki.
+
+Tu jest kod źródłowy aplikacji którą zacząłem pisać, by mi pomagała w nauce: [AI Assistant](https://github.com/dpurge/ai-assistant)
+Używam małych modeli językowych, które nie są ani zbyt mądre, ani zbyt szybkie, ale nie przeszkadza mi to zbytnio.
+Nie poprawiam wszystkich błędów, gdyż w tym ćwiczeniu chodzi o to, by jak najszybciej prześć do czytania tekstów oryginalnych.
+Miej świadomość, że w lekcjach są błędy.
+
+Ta strona ma służyć przede wszystkim mi samemu.
+Nie musi być piękna, nie musi być bezbłędna, ma być pomocna dla mnie a tworzenie materiałów do nauki ma być prawie automatyczne.
+Teksty biorę zewsząd - często są to artykuły z ineternetu które aplikacja skraca i upraszcza, ale mogą to być przetworzone fragmenty książek albo czytanki ze starych podręczników.
+Ucieszę się, jeśli pomoże jeszcze komuś.
+Chetnie przyjmę poprawki do tekstów i kodu.
+
+## Metoda upraszczania tekstów
+
+W tej chwili stosuję następującą metodę:
+
+1. tekst oryginalny jest skracany u upraszczany, ale staram się zachować oryginalne słownictwo i treść
+2. tekst jest tłumaczony na język polski (mój język ojczysty)
+3. jeśli system pisma tego wymaga (duża ilość znaków lub brak samogłosek), to tekst jest transkrybowany w systemie który jest wystarczająco przecyzyjny, ale nadal łatwy do czytania
+4. z tekstu wybierane są słówka ważne dla jego rozumienia i tworzony jest słowniczek
+5. z tekstu wybierane są ciekawe konstrukcje gramatyczne które są rozbijane na prostsze formy, tak by dana konstrukcja mogła być intuicyjnie zrozumiana bez wyjaśnień gramatycznych
+6. generowane są ćwiczenia, ponieważ nie ma nauki bez ćwiczeń (mózg zapamiętuje informacje których używa do osiągania swoich celów)
+
+Zakładam, że każdy kto będzie korzystał z tej strony uczy się języka w formalny sposób, korzystając z jakiegoś podręcznika.
+Daletego pomijam tu próby generowania wyjaśnień gramatycznych, tworzenia progresji od zagadnień łatwych do trudnych itd.
+
+Chodzi tu tylko o obniżenie bariery, tak bym mógł przeczytać i zrozumieć oryginalny tekst i uzupełniać swój zasób słówek.
+
+Ta strona jest dodatkiem, nie może być używana bez innych materiałów do formalnej nauki języka.
+Musisz mieć jakiś podręcznik.
+
+Nie będzie tu wyjaśnienia wymowy, nauki systemu pisma, omawiania gramatyki - przynajmniej na razie.
 
 ## Dostępne języki
 
-- [Hiszpański (`spa`)](./spa)
-- [Niemiecki (`deu`)](./deu)
-- [Arabski (`arb`)](./arb)
+- [Arabski literacki](./arb)
+- [Chiński (dialekt mandaryński)](./cmn)
+- [Niemiecki](./deu)
+- [Hindi](./hin)
+- [Indonezyjski](./ind)
+- [Hiszpański](./spa)
+- [Tadżycki](./tgk)
+- [Ukraiński](./ukr)
 
-## Struktura katalogów
+## Co Cię czeka?
 
-Lekcje są uporządkowane według języka i poziomu:
+Drogą do opanowania dowolnej umiejętności jest podejmowanie prób jej użycia, uzyskiwanie informacji zwrotnej, zrozumienie swoich błędów i sposobu ich poprawienia, ponawianie prób, i tak dalej - w pętli.
 
-```text
-docs/{iso-639-3-code}/{cefr-level}/{lesson-slug}.mdx
-```
+W nauce języka tymi umiejętnościami są: słuchanie, mówienie, czytanie, pisanie.
 
-Używaj trzyliterowych kodów ISO języków, takich jak `arb`, `pol`, `deu` lub
-`spa`. Poziom musi być jednym z: `a1`, `a2`, `b1`, `b2`, `c1` albo `c2`.
+Nauka nowego języka nie jest trudna, ale jest bardzo żmudna.
+Czeka Cię dużo pracy, nie da się tego zrobić szybko, ale każdy może odnieść sukces jeśli tylko nie ma wady genetycznej albo uszkodzenia mózgu która uniemożliwa posługiwanie się językiem.
+Musisz tylko podejmować próby, wiedzieć gdy popełnisz błędy, jak najszybciej dowiadywać się jak poprawić te błedy, oraz podejmować kolejne próby aż do czasu, gdy zacznie Ci się udawać.
+Uda Ci się na pewno, jeśli spełnisz te warunki, nawet jeśli nie masz tzw. "talentu" ani "wykształcenia".
+
+Nasz mózg po opanowaniu języka ojczystego optymalizuje swój wewnętrzny program analizy dżwięków mowy - bez wysiłku rozróżniamy dźwięki w języku ojczystym, ale przestajemy słyszeć różnice w dźwiekach w językach obcych.
+Słuchanie wymaga ponownego nauczenia się słyszenia różnic w głoskach, których już nie słyszymy.
+A głoski te będą się różnić u różnych rozmówców, prawdopodobnie potok wymowy będzie bardzo szybki a otoczenie może nam utrudniać odbiór: głos może być zniekształcony przez telefon lub głośnik, możemy rozmawiać w hałaśliwym otoczeniu, rozmówca może mieć wadę wymowy lub mówić dialektem.
+
+Mówienie wymaga koordynacji i biegłej kontroli nad aparatem mowy: struny głosowe napinają sie i rozlużniają w ułamkach sekund, dolna szczęka otwiera się na ściśle określoną szerokość, wargi zaokrąglają się lub rozciągają, język zmienia kształt i przesuwa się do tyłu lub do przodu, wyżej lub niżej, blokuje przepływ powietrza zupełnie lub częściowo, bez przewy przechodząc od pozycji do pozycji której wymagają kolejno artykułowane głoski.
+Podniebienie miękkie zamyka lub otwiera drogę do jamy nosowej.
+Ton i siła głosu ciągle się zmieniają.
+Każdy język ma swój własny zestaw dźwięków.
+Wszystko to musi odbywać się bardzo szybko, w naturalnym tempie mowy, bez przesadnych zniekształceń, albo nasz rozmówca przejdzie na inny język lub zrezygnuje z rozmowy.
+
+Czytanie nie jest naturalną umiejętnością i nie przychodzi nam łatwo.
+Systemy pisma różnią się między językami.
+Litery w innych systemach pisma mogą być bardzo podobne do siebie, jeśli ich nie znamy.
+Pismo ręczne może się różnić od pisma drukowanego.
+Ten sam język może mieć kilka różnych systemów pisma używanych w różnych sytuacjach.
+Nawet pismo alfabetyczne może być trudne do odczytania - może używać historycznej ortografii niepodobnej do współczesnej wymowy, może pomijać samogłoski.
+Pisma sylabiczne mają więcej znaków do opanowania, a niektóre systemy mogą wymagać zapamiętania od kilkuset do nawet kilku tysięcy znaków.
+
+Nawet dość krótki tekst może zawierać ok 3000 różnych słów.
+Nie należy wierzyć zachętom, że znajomość kilkuset najczęściej używanych słów pozwoli nam zrozumieć 80%, 90%, 99% tekstu.
+Najważniejsze słowa dla zrozumienia treści tekstu to nie będą te najczęstsze słowa.
+Potrzebujesz znać około 3000 słów by komunikować się w najprostszych sytuacjach życia codziennogo: przedstawić się, zrobić zakupy, podróżować.
+Żeby czytać w danym języku, musisz znać o wiele więcej słów, ale od pewnego poziomu nie musisz już rozumieć wszystkich słów w tekscie.
+Znaczenia nieznanych słów zaczniesz się domyślać z kontekstu, a w pewnym momencie te nieznane słowa staną się na tyle rzadkie, że ich znaczenie będzie wyjaśniane w tekście.
+
+Pisanie jest trudniejsze od czytanie.
+Musisz nie tylko umieć rozpoznawać słowa i znaczenie wyrażeń, ale samodzielnie dobierać słów i wyrażeń odpowiednich do sytuacji.
+To wymaga doświadczenia w języku, gdyż każdy język ma własny zestaw utartych sposobów wyrażania pewnych myśli i reguł, które mogą nie istnieć w twoim języku.
+Musisz opanować albo pisanie na klawiaturze w danym języku, co może być umiejętnością wymagąjącą pewnego wysiłku - na przykłd systemu szybkiego wprowadzania chińskich znaków na klawiaturze.
+Pismo ręczne też wymaga ćwiczeń - znaki pisane ręcznie mogą się znacząco różnić od druku.
+
+Każda z tych umiejętności jest inna i wymaga niezależnych, żmudnych ćwiczeń.
+Możesz biegle czytać książki w danym języku, ale nie umieć napisać podania o pracę ani nie rozumieć wywiadu w telewizji.
+Możesz świetnie znać dany język i w nim rozmawiać i czytać teksty w internecie, ale nie umieć przeczytać ręcznie napisanego listu i nie umieć pisać tak, jak piszą nosiciele tego języka.
+
+- Jeśli chcesz słuchać - *musisz* ćwiczyć słuchanie (youtube? radio? telewizja? koledzy w pracy/grze komputerowej?)
+- Jeśli chcesz mówić - *musisz* ćwiczyć mówienie (koledzy? mówienie do siebie na głos? symulowanie rozmów *na głos*?)
+- Jeśli chcesz czytać - *musisz* ćwiczyć czytanie (internet? książki? dokumentacja w pracy? wzory pism? prasa?)
+- Jeśli chcesz pisać - *musisz* ćwiczyć pisanie (w zeszycie? na forach internetowych? na ogólnych czatach? prowadzenie bloga?)
+
+Problemem w ćwiczeniu jest pokonanie bariery wejścia oraz uzyskanie jak najszbszej informacji zwrotnej - co robimy dobrze, a co źle.
+Bariera wejścia polega na wymaganej dość dużej biegłości, by ludzie chcieli z Tobą rozmawiać w obcym języku.
+
+Jeśli znasz tylko 1000 słów i gramatykę na poziomie takiego słownictwa, twoja rozmowa zapewne zakończy się po udzieleniu odpowiedzi na pytanie jak się nazywasz, ile masz lat, skąd jesteś i jak długo uczysz się danego języka.
+Na więcej zabraknie Ci słownictwa.
+
+Kolejny poziom to umiejętność zadania pytań i rozumienia odpowiedzi. "Czy ten autobus jedzie do Gdańska?" "Ile to kosztuje?" "O której sie zaczyna?"
+Jako turysta już dasz sobie radę, ale albo ludzie będą od razu przechodzićz Tobą na inny język, albo nie będziesz rozumieć, co Ci z takim zapałem opowiadają.
+
+Kolejny poziom to rozumienie właściwie wszystkich wypowiedzi w codziennym życiu: "Idziemy na obiad?" "Pożyczysz mi długopis?"
+Możesz jeszcze kaleczyć język w swoich wypowiedziach, ale potrafisz przekazać swoje intencje.
+Z czasem mówisz coraz więcej i swobodniej, aż do momentu gdy rozmowa toczy się swobodnie.
+Nadal popełniasz błędy i mówisz z obcym akcentem, ale rozmowa toczy się swobodnie i nie jest męcząca dla Twoich rozmówców.
+To jest zapewne najwyższy poziom, jaki może Ci dać podręcznik języka obcego na poziomie zaawansowanym.
+
+Dalsza nauka to nauka bez podręczników - czytanie tekstów oryginalnych.
+Słuchanie i rozmowy nie pomogą przejść Ci na wyższy poziom - ludzie w rozmowach używają prostego słownictwa i prostych wyrażeń.
+Twój rozmówca nieświadomie zejdzie na Twój poziom - zapamięta jakie słowa znasz, jakie tempo mowy jesteś w stanie przetworzyć, jakich konstrukcji używasz i dostosuje swoje wypowiedzi do Ciebie.
+Tylko czasami użyje jakiegoś nowego dla Ciebie wyrażania, ale będzie to tak rzadkie, że nie zapewni Ci wystarczającej ilości materiału do nauki.
+Musisz zacząć samodzielnie czytać oryginalne teksty - internet, książki, dokumentację, podręczniki, ...

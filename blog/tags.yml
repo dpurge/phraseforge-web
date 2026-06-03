@@ -1,9 +1,9 @@
 lessons:
   label: Lekcje
   permalink: /lessons
-  description: Projektowanie lekcji i aktualizacje strony.
+  description: Notatki o publikowanych lekcjach.
 
-planning:
-  label: Planowanie
-  permalink: /planning
-  description: Notatki o bibliotece lekcji PhraseForge.
+phraseforge:
+  label: PhraseForge
+  permalink: /phraseforge
+  description: Notatki o aplikacji PhraseForge.

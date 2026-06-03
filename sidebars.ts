@@ -73,42 +73,16 @@ function createLanguageItem(language: LanguageConfig) {
   };
 }
 
+const level: Record<string, string> = {
+  a1: 'Poziom A1 -- początkujący -- podstawowe zwroty potoczne i wyrażenia dotyczące życia codziennego, proste rozmowy.',
+  a2: 'Poziom A2 -- podstawowy -- często używane wyrażenia związane z życiem codziennym, rutynowe sytuacje komunikacyjne.',
+  b1: 'Poziom B1 -- niższy średnio zaawansowany -- rozumienie znaczenia głównych wątków przekazu zawartego w jasnych, standardowych wypowiedziach, tworzenie prostych, spójnych wypowiedzi oraz opisów i uzasadnień.',
+  b2: 'Poziom B2 -- wyższy średnio zaawansowany --  rozumienie znaczenia głównych wątków przekazu zawartego w złożonych tekstach, dyskusja na tematy techniczne.',
+  c1: 'Poziom C1 -- zaawansowany -- rozumienie trudnych, dłuższych tekstów, dostrzeganie wyrażone pośrednio, ukrytych znaczeń.',
+  c2: 'Poziom C2 -- biegły -- płynne czytanie i streszczanie informacji z dowolnych tekstów.',
+}
+
 const languages: LanguageConfig[] = [
-  {
-    code: 'spa',
-    label: 'Hiszpański',
-    levels: [
-      {
-        code: 'b1',
-        title: 'Hiszpański B1',
-        description:
-          'Lekcje hiszpańskiego na poziomie średnio zaawansowanym.',
-      },
-      {
-        code: 'b2',
-        title: 'Hiszpański B2',
-        description:
-          'Lekcje hiszpańskiego do omawiania niuansów i kompromisów.',
-      },
-    ],
-  },
-  {
-    code: 'deu',
-    label: 'Niemiecki',
-    levels: [
-      {
-        code: 'b1',
-        title: 'Niemiecki B1',
-        description: 'Lekcje niemieckiego o codziennych planach i rutynach.',
-      },
-      {
-        code: 'b2',
-        title: 'Niemiecki B2',
-        description:
-          'Lekcje niemieckiego do budowania uporządkowanych argumentów.',
-      },
-    ],
-  },
   {
     code: 'arb',
     label: 'Arabski',
@@ -116,35 +90,454 @@ const languages: LanguageConfig[] = [
       {
         code: 'a1',
         title: 'Arabski A1',
-        description: 'Lekcje arabskiego dla osób zaczynających od podstaw.',
+        description: level['a1'],
       },
       {
         code: 'a2',
         title: 'Arabski A2',
-        description: 'Lekcje arabskiego do prostych codziennych sytuacji.',
+        description: level['a2'],
       },
       {
         code: 'b1',
         title: 'Arabski B1',
-        description: 'Lekcje arabskiego do samodzielnej komunikacji.',
+        description: level['b1'],
       },
       {
         code: 'b2',
         title: 'Arabski B2',
-        description: 'Lekcje arabskiego do wyjaśniania opinii i argumentów.',
+        description: level['b2'],
       },
       {
         code: 'c1',
         title: 'Arabski C1',
-        description: 'Lekcje arabskiego do swobodnej, precyzyjnej komunikacji.',
+        description: level['c1'],
       },
       {
         code: 'c2',
         title: 'Arabski C2',
-        description:
-          'Lekcje arabskiego do zaawansowanej pracy z rejestrem i stylem.',
+        description: level['c2'],
       },
     ],
+  },
+  
+  {
+    code: 'bul',
+    label: 'Bułgarski',
+    levels: [],
+  },
+  
+  {
+    code: 'ces',
+    label: 'Czeski',
+    levels: [],
+  },
+  
+  {
+    code: 'cmn',
+    label: 'Chiński (mandaryński)',
+    levels: [
+      {
+        code: 'a1',
+        title: 'Chiński A1',
+        description: level['a1'],
+      },
+      {
+        code: 'a2',
+        title: 'Chiński A2',
+        description: level['a2'],
+      },
+      {
+        code: 'b1',
+        title: 'Chiński B1',
+        description: level['b1'],
+      },
+      {
+        code: 'b2',
+        title: 'Chiński B2',
+        description: level['b2'],
+      },
+      {
+        code: 'c1',
+        title: 'Chiński C1',
+        description: level['c1'],
+      },
+      {
+        code: 'c2',
+        title: 'Chiński C2',
+        description: level['c2'],
+      },
+    ],
+  },
+  
+  {
+    code: 'dan',
+    label: 'Duński',
+    levels: [],
+  },
+
+  {
+    code: 'deu',
+    label: 'Niemiecki',
+    levels: [
+      {
+        code: 'a1',
+        title: 'Niemiecki A1',
+        description: level['a1'],
+      },
+      {
+        code: 'a2',
+        title: 'Niemiecki A2',
+        description: level['a2'],
+      },
+      {
+        code: 'b1',
+        title: 'Niemiecki B1',
+        description: level['b1'],
+      },
+      {
+        code: 'b2',
+        title: 'Niemiecki B2',
+        description: level['b2'],
+      },
+      {
+        code: 'c1',
+        title: 'Niemiecki C1',
+        description: level['c1'],
+      },
+      {
+        code: 'c2',
+        title: 'Niemiecki C2',
+        description: level['c2'],
+      },
+    ],
+  },
+  
+  {
+    code: 'ell',
+    label: 'Nowogrecki',
+    levels: [],
+  },
+  
+  {
+    code: 'epo',
+    label: 'Esperanto',
+    levels: [],
+  },
+  
+  {
+    code: 'fas',
+    label: 'Perski',
+    levels: [],
+  },
+  
+  {
+    code: 'fin',
+    label: 'Fiński',
+    levels: [],
+  },
+  
+  {
+    code: 'fra',
+    label: 'Francuski',
+    levels: [],
+  },
+  
+  {
+    code: 'grc',
+    label: 'Starogrecki',
+    levels: [],
+  },
+  
+  {
+    code: 'heb',
+    label: 'Hebrajski',
+    levels: [],
+  },
+  
+  {
+    code: 'hin',
+    label: 'Hindi',
+    levels: [],
+  },
+  
+  {
+    code: 'hun',
+    label: 'Węgierski',
+    levels: [],
+  },
+  
+  {
+    code: 'ind',
+    label: 'Indonezyjski',
+    levels: [
+      {
+        code: 'a1',
+        title: 'Indonezyjski A1',
+        description: level['a1'],
+      },
+      {
+        code: 'a2',
+        title: 'Indonezyjski A2',
+        description: level['a2'],
+      },
+      {
+        code: 'b1',
+        title: 'Indonezyjski B1',
+        description: level['b1'],
+      },
+      {
+        code: 'b2',
+        title: 'Indonezyjski B2',
+        description: level['b2'],
+      },
+      {
+        code: 'c1',
+        title: 'Indonezyjski C1',
+        description: level['c1'],
+      },
+      {
+        code: 'c2',
+        title: 'Indonezyjski C2',
+        description: level['c2'],
+      },
+    ],
+  },
+  
+  {
+    code: 'ita',
+    label: 'Włoski',
+    levels: [],
+  },
+  
+  {
+    code: 'jpn',
+    label: 'Japoński',
+    levels: [],
+  },
+  
+  {
+    code: 'kaz',
+    label: 'Kazachski',
+    levels: [],
+  },
+  
+  {
+    code: 'kor',
+    label: 'Koreański',
+    levels: [],
+  },
+  
+  {
+    code: 'lat',
+    label: 'Łaciński',
+    levels: [],
+  },
+  
+  {
+    code: 'lit',
+    label: 'Litewski',
+    levels: [],
+  },
+  
+  {
+    code: 'mon',
+    label: 'Mongolski',
+    levels: [],
+  },
+  
+  {
+    code: 'nld',
+    label: 'Niderlandzki',
+    levels: [],
+  },
+  
+  {
+    code: 'nor',
+    label: 'Norweski',
+    levels: [],
+  },
+  
+  {
+    code: 'por',
+    label: 'Portugalski',
+    levels: [],
+  },
+  
+  {
+    code: 'ron',
+    label: 'Rumuński',
+    levels: [],
+  },
+  
+  {
+    code: 'rus',
+    label: 'Rosyjski',
+    levels: [],
+  },
+
+  {
+    code: 'spa',
+    label: 'Hiszpański',
+    levels: [
+      {
+        code: 'a1',
+        title: 'Hiszpański A1',
+        description: level['a1'],
+      },
+      {
+        code: 'a2',
+        title: 'Hiszpański A2',
+        description: level['a2'],
+      },
+      {
+        code: 'b1',
+        title: 'Hiszpański B1',
+        description: level['b1'],
+      },
+      {
+        code: 'b2',
+        title: 'Hiszpański B2',
+        description: level['b2'],
+      },
+      {
+        code: 'c1',
+        title: 'Hiszpański C1',
+        description: level['c1'],
+      },
+      {
+        code: 'c2',
+        title: 'Hiszpański C2',
+        description: level['c2'],
+      },
+    ],
+  },
+  
+  {
+    code: 'srp',
+    label: 'Serbski',
+    levels: [],
+  },
+  
+  {
+    code: 'swa',
+    label: 'Swahili',
+    levels: [],
+  },
+  
+  {
+    code: 'swe',
+    label: 'Szwedzki',
+    levels: [],
+  },
+  
+  {
+    code: 'tat',
+    label: 'Tatarski',
+    levels: [],
+  },
+  
+  {
+    code: 'tgk',
+    label: 'Tadżycki',
+    levels: [
+      {
+        code: 'a1',
+        title: 'Tadżycki A1',
+        description: level['a1'],
+      },
+      {
+        code: 'a2',
+        title: 'Tadżycki A2',
+        description: level['a2'],
+      },
+      {
+        code: 'b1',
+        title: 'Tadżycki B1',
+        description: level['b1'],
+      },
+      {
+        code: 'b2',
+        title: 'Tadżycki B2',
+        description: level['b2'],
+      },
+      {
+        code: 'c1',
+        title: 'Tadżycki C1',
+        description: level['c1'],
+      },
+      {
+        code: 'c2',
+        title: 'Tadżycki C2',
+        description: level['c2'],
+      },
+    ],
+  },
+  
+  {
+    code: 'tur',
+    label: 'Turecki',
+    levels: [],
+  },
+  
+  {
+    code: 'uig',
+    label: 'Ujgurski',
+    levels: [],
+  },
+  
+  {
+    code: 'ukr',
+    label: 'Ukraiński',
+    levels: [
+      {
+        code: 'a1',
+        title: 'Ukraiński A1',
+        description: level['a1'],
+      },
+      {
+        code: 'a2',
+        title: 'Ukraiński A2',
+        description: level['a2'],
+      },
+      {
+        code: 'b1',
+        title: 'Ukraiński B1',
+        description: level['b1'],
+      },
+      {
+        code: 'b2',
+        title: 'Ukraiński B2',
+        description: level['b2'],
+      },
+      {
+        code: 'c1',
+        title: 'Ukraiński C1',
+        description: level['c1'],
+      },
+      {
+        code: 'c2',
+        title: 'Ukraiński C2',
+        description: level['c2'],
+      },
+    ],
+  },
+  
+  {
+    code: 'uzb',
+    label: 'Uzbecki',
+    levels: [],
+  },
+  
+  {
+    code: 'vie',
+    label: 'Wietnamski',
+    levels: [],
+  },
+  
+  {
+    code: 'yid',
+    label: 'Jidysz',
+    levels: [],
   },
 ];
 
