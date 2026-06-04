@@ -5,21 +5,138 @@ slug: /
 
 # PhraseForge
 
-Choose a language to browse available CEFR levels and lessons.
+PhraseForge helps you learn foreign languages by providing material for reading and vocabulary expansion in foreign languages.
 
-## Available languages
+I always thought there wasn't enough interesting text on the internet that a person learning a language could understand.
 
-- [Spanish (`spa`)](./spa)
-- [German (`deu`)](./deu)
-- [Arabic (`arb`)](./arb)
+Textbooks readings are boring, and books and texts on the internet are too difficult.
 
-## Directory pattern
+To learn a language, you must pass a large amount of that language through your brain, and the processed content must be interesting enough for our brain to consider it worth the effort.
 
-Lessons are organized by language and level:
+Such texts didn't exist, but the age of artificial intelligence has arrived; we can ask it to prepare learning material.
 
-```text
-docs/{iso-639-3-code}/{cefr-level}/{lesson-slug}.mdx
-```
+Here is the source code of the application I started writing to help me learn: [AI Assistant](https://github.com/dpurge/ai-assistant)
 
-Use three-letter ISO language codes such as `arb`, `pol`, `deu`, or `spa`.
-Levels must be one of `a1`, `a2`, `b1`, `b2`, `c1`, or `c2`.
+I use small language models that are neither too smart nor too fast, but I don't mind that much.
+
+I don't correct all errors, because in this exercise, the goal is to get to reading original texts as quickly as possible.
+Be aware that the lessons contain errors.
+
+<br>
+
+This page is mainly for me.
+It doesn't have to be beautiful, it doesn't have to be flawless; it just has to be helpful for me, and the creation of learning materials should be almost automatic.
+I take texts from everywhere - often they are articles from the internet that the application shortens and simplifies, but they can also be processed excerpts from books or readings from old textbooks.
+I would be happy if it helps someone else.
+I gladly accept corrections for texts and code.
+
+## Text Simplification Method
+
+Currently, I use the following method:
+
+1. The original text is shortened and simplified, but I try to preserve the original vocabulary and content.
+2. The text is translated into Polish (my native language).
+3. If the writing system requires it (a large amount of characters or lack of vowels), the text is transcribed in a system that is precise enough but still easy to read.
+4. Key words important for understanding the text are selected and a vocabulary list is created.
+5. Interesting grammatical constructions are selected from the text and broken down into simpler forms, so that the given construction can be intuitively understood without grammatical explanations.
+6. Exercises are generated, because there is no learning without exercises (the brain remembers information that it uses to achieve its goals).
+
+I assume that everyone who uses this page is learning a language in a formal way, using some textbook.
+Therefore, I omit trying to generate grammatical explanations, creating progression from easy to difficult, etc.
+
+It's only about lowering the barrier, so that I can read and understand the original text and expand my vocabulary.
+
+This page is a supplement; it cannot be used without other materials for formal language learning.
+You must have some textbook.
+
+There will be no explanation of pronunciation, learning of the writing system, or discussion of grammar - at least not for now.
+
+## Available Languages
+
+- [Literary Arabic](./arb)
+- [Chinese (Mandarin dialect)](./cmn)
+- [German](./deu)
+- [Hindi](./hin)
+- [Indonesian](./ind)
+- [Spanish](./spa)
+- [Tajik](./tgk)
+- [Ukrainian](./ukr)
+
+## What Awaits You?
+
+The path to mastering any skill is to attempt to use it, get feedback, understand your mistakes and how to fix them, try again, and so on - in a loop.
+
+In language learning, these skills are: listening, speaking, reading, and writing.
+
+Learning a new language is not difficult, but it is very laborious.
+
+You are in for a lot of work; it cannot be done quickly, but anyone can succeed as long as they don't have a genetic defect or brain damage that prevents speaking the language.
+
+You just have to try, know when you make mistakes, learn how to fix those mistakes as quickly as possible, and keep trying until it starts to feel easy.
+
+You will surely succeed if you meet these conditions, even if you don't have "talent" or "education."
+
+Our brain, after mastering the native language, optimizes its internal sound analysis program - we distinguish sounds in the native language effortlessly, but we stop hearing the differences in sounds in foreign languages.
+
+Listening requires relearning to hear the differences in vowels, which we no longer hear.
+
+And these sounds will differ among different speakers; the pronunciation flow may be very fast and the environment may hinder reception: the voice may be distorted by a phone or speaker, we may converse in a noisy environment, the speaker may have a speech defect or speak a dialect.
+
+Speaking requires coordination and fluent control over the vocal apparatus: vocal cords tighten and relax in fractions of a second, the lower jaw opens to a strictly defined width, lips round or stretch, the tongue changes shape and moves back or forward, raising or lowering, blocking the flow of air completely or partially, without passing from position to position required by the sequentially articulated sounds.
+
+The soft palate closes or opens the passage to the nasal cavity.
+Tone and volume constantly change.
+Every language has its own set of sounds.
+All of this must happen very quickly, at a natural pace of speech, without excessive distortions, or our conversation partner will switch to another language or give up the conversation.
+
+Reading is not a natural skill and does not come easily.
+Writing systems differ between languages.
+Letters in other writing systems may be very similar to each other if we don't know them.
+Handwriting may differ from printed writing.
+A single language may have several different writing systems used in different situations.
+Even the alphabetic script can be difficult to read - it may use historical orthography unlike modern pronunciation, or it may skip vowels.
+Syllabic scripts require learning more signs, and some systems may require memorizing hundreds to even thousands of signs.
+
+Even a quite short text may contain about 3000 different words.
+Do not believe the encouragement that knowing a few hundred of the most common words will allow us to understand 80%, 90%, 99% of the text.
+The most important words for understanding the text's content will not be the most common words.
+You need to know about 3000 words to communicate in the most basic daily life situations: introducing yourself, shopping, traveling.
+To read in a given language, you must know many more words, but from a certain level, you no longer need to understand every word in the text.
+You will start to guess the meanings of unknown words from the context, and eventually unknown words will become so rare that their meaning will be explained in the text.
+
+Writing is harder than reading.
+You must not only know how to recognize words and the meaning of expressions, but also to independently select words and expressions appropriate for the situation.
+This requires language experience, because every language has its own set of established ways of expressing certain thoughts and rules that may not exist in your language.
+
+You must master either typing on a keyboard in the given language, which can be a skill requiring some effort - for example, the system of quickly entering Chinese characters on a keyboard.
+Handwriting also requires practice - hand-written letters may differ significantly from print.
+
+Every one of these skills is different and requires independent, laborious practice.
+You may be able to read books in a given language fluently, but not be able to write a job application or understand a TV interview.
+You may know a language well and be able to speak and read texts on the internet, but not be able to read a handwritten letter or write like a native speaker.
+
+- If you want to listen - *you must* practice listening (youtube? radio? television? colleagues at work/computer games?)
+- If you want to speak - *you must* practice speaking (colleagues? talking to yourself aloud? simulating conversations *aloud*?)
+- If you want to read - *you must* practice reading (internet? books? documentation at work? script examples? press?)
+- If you want to write - *you must* practice writing (in a notebook? on internet forums? in general chats? keeping a blog?)
+
+The problem with practicing is overcoming the entry barrier and getting the fastest possible feedback - what we do well and what we do poorly.
+The entry barrier is the required high proficiency, so that people want to talk to you in a foreign language.
+
+If you only know 1000 words and grammar at that vocabulary level, your conversation will probably end after answering questions like what your name is, how old you are, where you are from, and how long you have been learning the language.
+You will lack enough vocabulary for more.
+
+The next level is the ability to ask questions and understand answers. "Is this bus going to Gdańsk?" "How much does it cost?" "When does it start?"
+As a tourist, you will manage, but either people will immediately switch to another language with you, or you won't understand what they are telling you with such enthusiasm.
+
+The next level is understanding almost all statements in everyday life: "Shall we go to dinner?" "Can you lend me a pen?"
+You might still mangle the language in your statements, but you can convey your intentions.
+Over time, you speak more and more naturally until the conversation flows freely.
+You still make mistakes and speak with a foreign accent, but the conversation flows freely and is not exhausting for your conversation partners.
+This is probably the highest level that an advanced foreign language textbook can give you.
+
+Further learning is learning without textbooks - reading original texts.
+Listening and conversations will not help you reach a higher level - people in conversations use simple vocabulary and simple expressions.
+Your conversation partner will unconsciously descend to your level - they will remember what words you know, what speaking pace you are able to process, and what constructions you use, and they will adapt their statements to you.
+Only occasionally will they use some new expression for you, but it will be so rare that it will not provide you with enough material for learning.
+You must start reading original texts yourself - internet, books, documentation, textbooks, ...
