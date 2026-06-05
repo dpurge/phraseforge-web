@@ -1,6 +1,8 @@
 import clsx from 'clsx';
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import {Fragment, useId, useState, type ReactNode} from 'react';
+import ReactMarkdown from 'react-markdown';
+import remarkGfm from 'remark-gfm';
 
 import styles from './styles.module.css';
 
@@ -151,9 +153,9 @@ const rtlScripts = new Set<ScriptCode>(['arab', 'hebr', 'syrc']);
 const verticalScripts = new Set<ScriptCode>(['mong']);
 const letterOrNumberPattern = /[\p{L}\p{N}]/u;
 const strongTextPattern = /(\*\*[^*]+\*\*)/g;
-const unorderedListPattern = /^\s*[*-]\s+(.*)$/;
-const orderedListPattern = /^\s*\d+\.\s+(.*)$/;
-const alphaListPattern = /^\s*[a-z]\.\s+(.*)$/i;
+// const unorderedListPattern = /^\s*[*-]\s+(.*)$/;
+// const orderedListPattern = /^\s*\d+\.\s+(.*)$/;
+// const alphaListPattern = /^\s*[a-z]\.\s+(.*)$/i;
 const exerciseListPattern = /^(\s*)([*-]|\d+\.|[a-z]\.)\s+(.*)$/i;
 const structuredSeparatorPattern = /\s=\s|=/;
 
@@ -376,9 +378,9 @@ function renderFormattedInline(
     });
 }
 
-function renderInline(content: string): ReactNode {
-  return renderFormattedInline(content, (text) => text);
-}
+// function renderInline(content: string): ReactNode {
+//   return renderFormattedInline(content, (text) => text);
+// }
 
 function renderExerciseInline(content: string): ReactNode {
   return renderFormattedInline(content, (text, keyPrefix) =>
@@ -399,77 +401,77 @@ function renderExerciseInline(content: string): ReactNode {
   );
 }
 
-function parseRichBlocks(content: string): RichBlock[] {
-  const blocks: RichBlock[] = [];
-  const paragraphLines: string[] = [];
-  let activeList: Extract<RichBlock, {type: 'ul' | 'ol' | 'alpha'}> | null =
-    null;
+// function parseRichBlocks(content: string): RichBlock[] {
+//   const blocks: RichBlock[] = [];
+//   const paragraphLines: string[] = [];
+//   let activeList: Extract<RichBlock, {type: 'ul' | 'ol' | 'alpha'}> | null =
+//     null;
 
-  function flushParagraph() {
-    if (paragraphLines.length > 0) {
-      blocks.push({
-        type: 'paragraph',
-        lines: [...paragraphLines],
-      });
-      paragraphLines.length = 0;
-    }
-  }
+//   function flushParagraph() {
+//     if (paragraphLines.length > 0) {
+//       blocks.push({
+//         type: 'paragraph',
+//         lines: [...paragraphLines],
+//       });
+//       paragraphLines.length = 0;
+//     }
+//   }
 
-  function flushList() {
-    if (activeList) {
-      blocks.push(activeList);
-      activeList = null;
-    }
-  }
+//   function flushList() {
+//     if (activeList) {
+//       blocks.push(activeList);
+//       activeList = null;
+//     }
+//   }
 
-  function addListItem(type: 'ul' | 'ol' | 'alpha', value: string) {
-    flushParagraph();
+//   function addListItem(type: 'ul' | 'ol' | 'alpha', value: string) {
+//     flushParagraph();
 
-    if (activeList?.type !== type) {
-      flushList();
-      activeList = {
-        type,
-        items: [],
-      };
-    }
+//     if (activeList?.type !== type) {
+//       flushList();
+//       activeList = {
+//         type,
+//         items: [],
+//       };
+//     }
 
-    activeList.items.push(value);
-  }
+//     activeList.items.push(value);
+//   }
 
-  for (const line of content.split('\n')) {
-    if (!line.trim()) {
-      flushParagraph();
-      flushList();
-      continue;
-    }
+//   for (const line of content.split('\n')) {
+//     if (!line.trim()) {
+//       flushParagraph();
+//       flushList();
+//       continue;
+//     }
 
-    const unorderedMatch = unorderedListPattern.exec(line);
-    if (unorderedMatch) {
-      addListItem('ul', unorderedMatch[1]);
-      continue;
-    }
+//     const unorderedMatch = unorderedListPattern.exec(line);
+//     if (unorderedMatch) {
+//       addListItem('ul', unorderedMatch[1]);
+//       continue;
+//     }
 
-    const orderedMatch = orderedListPattern.exec(line);
-    if (orderedMatch) {
-      addListItem('ol', orderedMatch[1]);
-      continue;
-    }
+//     const orderedMatch = orderedListPattern.exec(line);
+//     if (orderedMatch) {
+//       addListItem('ol', orderedMatch[1]);
+//       continue;
+//     }
 
-    const alphaMatch = alphaListPattern.exec(line);
-    if (alphaMatch) {
-      addListItem('alpha', alphaMatch[1]);
-      continue;
-    }
+//     const alphaMatch = alphaListPattern.exec(line);
+//     if (alphaMatch) {
+//       addListItem('alpha', alphaMatch[1]);
+//       continue;
+//     }
 
-    flushList();
-    paragraphLines.push(line.trimEnd());
-  }
+//     flushList();
+//     paragraphLines.push(line.trimEnd());
+//   }
 
-  flushParagraph();
-  flushList();
+//   flushParagraph();
+//   flushList();
 
-  return blocks;
-}
+//   return blocks;
+// }
 
 function getExerciseListType(marker: string): ExerciseListType {
   if (marker === '*' || marker === '-') {
@@ -651,39 +653,47 @@ function renderRichContent(
     return renderExerciseContent(content);
   }
 
+  // return (
+  //   <div
+  //     className={clsx(styles.richContent, richContentClassName)}
+  //     dir={direction}>
+  //     {parseRichBlocks(content).map((block, blockIndex) => {
+  //       if (block.type === 'paragraph') {
+  //         return (
+  //           <p className={styles.paragraph} key={blockIndex} dir={direction}>
+  //             {block.lines.map((line, lineIndex) => (
+  //               <Fragment key={lineIndex}>
+  //                 {lineIndex > 0 && <br />}
+  //                 {renderInline(line)}
+  //               </Fragment>
+  //             ))}
+  //           </p>
+  //         );
+  //       }
+
+  //       const ListTag = block.type === 'ul' ? 'ul' : 'ol';
+
+  //       return (
+  //         <ListTag
+  //           className={styles.list}
+  //           key={blockIndex}
+  //           type={block.type === 'alpha' ? 'a' : undefined}>
+  //           {block.items.map((item, itemIndex) => (
+  //             <li key={itemIndex} dir={listDirection}>
+  //               {renderInline(item)}
+  //             </li>
+  //           ))}
+  //         </ListTag>
+  //       );
+  //     })}
+  //   </div>
+  // );
+
   return (
     <div
       className={clsx(styles.richContent, richContentClassName)}
       dir={direction}>
-      {parseRichBlocks(content).map((block, blockIndex) => {
-        if (block.type === 'paragraph') {
-          return (
-            <p className={styles.paragraph} key={blockIndex} dir={direction}>
-              {block.lines.map((line, lineIndex) => (
-                <Fragment key={lineIndex}>
-                  {lineIndex > 0 && <br />}
-                  {renderInline(line)}
-                </Fragment>
-              ))}
-            </p>
-          );
-        }
-
-        const ListTag = block.type === 'ul' ? 'ul' : 'ol';
-
-        return (
-          <ListTag
-            className={styles.list}
-            key={blockIndex}
-            type={block.type === 'alpha' ? 'a' : undefined}>
-            {block.items.map((item, itemIndex) => (
-              <li key={itemIndex} dir={listDirection}>
-                {renderInline(item)}
-              </li>
-            ))}
-          </ListTag>
-        );
-      })}
+      <ReactMarkdown remarkPlugins={[remarkGfm]}>{content}</ReactMarkdown>
     </div>
   );
 }
