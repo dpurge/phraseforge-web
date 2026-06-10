@@ -13,10 +13,14 @@ type MdastNode = {
   [key: string]: unknown;
 };
 
-const lessonBlockPattern =
-  /^lesson-(text|transcription|translation|vocabulary|models|exercise)$/;
+const lessonBlockPattern = /^lesson-(vocabulary|models)$/;
 const metaAttributePattern =
   /(?:^|\s)([A-Za-z_][\w-]*)=(?:"([^"]*)"|'([^']*)'|([^\s]+))/g;
+
+const componentNameByKind: Record<string, string> = {
+  vocabulary: 'LessonVocabulary',
+  models: 'LessonModels',
+};
 
 function parseMetaAttributes(meta: string | null | undefined) {
   const attributes: Record<string, string> = {};
@@ -37,13 +41,12 @@ function mdxAttribute(name: string, value: string): MdxAttribute {
   };
 }
 
-function createLessonElementNode(
+function createLessonNode(
   kind: string,
   content: string,
   metadata: Record<string, string>,
 ): MdastNode {
   const attributes = [
-    mdxAttribute('kind', kind),
     mdxAttribute('content', content),
     ...Object.entries(metadata)
       .filter(([name]) => name !== 'kind' && name !== 'content')
@@ -52,7 +55,7 @@ function createLessonElementNode(
 
   return {
     type: 'mdxJsxFlowElement',
-    name: 'LessonElement',
+    name: componentNameByKind[kind],
     attributes,
     children: [],
   };
@@ -68,7 +71,7 @@ function transformLessonBlocks(node: MdastNode): void {
       const match = lessonBlockPattern.exec(child.lang);
 
       if (match) {
-        return createLessonElementNode(
+        return createLessonNode(
           match[1],
           child.value ?? '',
           parseMetaAttributes(child.meta),

@@ -134,6 +134,66 @@
   margin-bottom: 0;
 }
 
+.instruction {
+  font-size: 1rem;
+  line-height: 1.6;
+  writing-mode: horizontal-tb;
+}
+
+.native {
+  font-size: 1rem;
+  line-height: 1.6;
+  writing-mode: horizontal-tb;
+  unicode-bidi: isolate;
+}
+
+.hint {
+  margin-inline-start: 0.4em;
+  color: var(--ifm-color-emphasis-700);
+  font-size: 0.9em;
+  opacity: 0.9;
+}
+
+.wordBank {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  margin: 0 0 0.9rem;
+}
+
+.wordBankItem {
+  display: inline-flex;
+  align-items: center;
+  border: 1px solid var(--ifm-color-emphasis-300);
+  border-radius: 999px;
+  padding: 0.15rem 0.7rem;
+  background: var(--ifm-background-color);
+  unicode-bidi: isolate;
+}
+
+.match {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+  gap: 1rem;
+  margin: 0 0 0.9rem;
+}
+
+.column {
+  min-width: 0;
+}
+
+.columnReset {
+  font-size: 1rem;
+  line-height: 1.6;
+  writing-mode: horizontal-tb;
+}
+
+@media (max-width: 720px) {
+  .match {
+    grid-template-columns: 1fr;
+  }
+}
+
 .list {
   margin: 0 0 0.9rem;
   padding-inline-start: 1.5rem;
