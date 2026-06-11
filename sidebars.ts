@@ -245,7 +245,38 @@ const languages: LanguageConfig[] = [
   {
     code: 'grc',
     label: 'Starogrecki',
-    levels: [],
+    levels: [
+      {
+        code: 'a1',
+        title: 'Starogrecki A1',
+        description: level['a1'],
+      },
+      {
+        code: 'a2',
+        title: 'Starogrecki A2',
+        description: level['a2'],
+      },
+      {
+        code: 'b1',
+        title: 'Starogrecki B1',
+        description: level['b1'],
+      },
+      {
+        code: 'b2',
+        title: 'Starogrecki B2',
+        description: level['b2'],
+      },
+      {
+        code: 'c1',
+        title: 'Starogrecki C1',
+        description: level['c1'],
+      },
+      {
+        code: 'c2',
+        title: 'Starogrecki C2',
+        description: level['c2'],
+      },
+    ],
   },
   
   {
@@ -330,7 +361,38 @@ const languages: LanguageConfig[] = [
   {
     code: 'lat',
     label: 'Łaciński',
-    levels: [],
+    levels: [
+      {
+        code: 'a1',
+        title: 'Łacina A1',
+        description: level['a1'],
+      },
+      {
+        code: 'a2',
+        title: 'Łacina A2',
+        description: level['a2'],
+      },
+      {
+        code: 'b1',
+        title: 'Łacina B1',
+        description: level['b1'],
+      },
+      {
+        code: 'b2',
+        title: 'Łacina B2',
+        description: level['b2'],
+      },
+      {
+        code: 'c1',
+        title: 'Łacina C1',
+        description: level['c1'],
+      },
+      {
+        code: 'c2',
+        title: 'Łacina C2',
+        description: level['c2'],
+      },
+    ],
   },
   
   {
