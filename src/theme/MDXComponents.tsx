@@ -1,8 +1,6 @@
 import MDXComponents from '@theme-original/MDXComponents';
 import {
   Text,
-  Transcription,
-  Translation,
   Exercise,
   Instruction,
   L,
@@ -11,15 +9,17 @@ import {
   WordBank,
   Match,
   Column,
-  LessonVocabulary,
-  LessonModels,
-} from '@site/src/components/LessonElement';
+  Vocabulary,
+  Models,
+  Dialog,
+  Turn,
+  Questions,
+  Inflection,
+} from '@site/src/components/Lesson';
 
 export default {
   ...MDXComponents,
   Text,
-  Transcription,
-  Translation,
   Exercise,
   Instruction,
   L,
@@ -28,6 +28,10 @@ export default {
   WordBank,
   Match,
   Column,
-  LessonVocabulary,
-  LessonModels,
+  Vocabulary,
+  Models,
+  Dialog,
+  Turn,
+  Questions,
+  Inflection,
 };

@@ -103,12 +103,7 @@ const config: Config = {
         src: 'img/logo.svg',
       },
       items: [
-        {
-          type: 'docSidebar',
-          sidebarId: 'lessonsSidebar',
-          position: 'left',
-          label: 'Lekcje',
-        },
+        {to: '/', label: 'Lekcje', position: 'left'},
         {to: '/blog', label: 'Blog', position: 'left'},
         {
           type: 'localeDropdown',
