@@ -103,7 +103,7 @@ const config: Config = {
         src: 'img/logo.svg',
       },
       items: [
-        {to: '/', label: 'Lekcje', position: 'left'},
+        {to: '/lang-list', label: 'Lekcje', position: 'left'},
         {to: '/blog', label: 'Blog', position: 'left'},
         {
           type: 'localeDropdown',
